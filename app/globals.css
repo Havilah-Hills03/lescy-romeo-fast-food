@@ -1,26 +1,56 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+h1, h2, h3, h5, button {
+  font-family: var(--font-poppins), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+a, p, li {
+  font-family: var(--font-inter), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+nav li a {
+   font-size: 1rem;
+   font-weight: 600!important; 
+   color: #121212;
+}
+nav li a:hover{
+  color: #E31E24
+}
+nav li {
+  color: #121212!important;
+}
+
+.h1{
+  color: #F9F9F9;
+  font-weight: 600;
+font-size: 35px;
+  line-height: 0%;
+  text-align: center;
+}
+
+.pro-card:hover button {
+  background-color: #E31E24;
+  color: white!important; 
+ 
+}
+.pro-card:hover {
+    transform: translateY(-10); 
+    transition: all 0.25s ease   ;
+}
+
+.about button{
+  display: none
+}
+
+
+@media (max-width: 578px) {
+  button{
+    width: 86px;
+    height: 26px;
+    font-size:10px ;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .hero-com img {
+    width: 160!important;
+    height: 165px!important ;
+  }
 }
