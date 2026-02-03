@@ -137,7 +137,7 @@ const products = [
    <section className="py-6 lg:py-20">
   {/* Container */}
   <div className="max-w-[1280px] mx-auto md:px-4 px-2 sm:px-6 lg:px-10">
-    <h1 className="h1 text-center lg:mb-12 md:mb-12 mb-6">Drinks</h1>
+    <h1 className="h1 text-center pt-8 font-medium text-[20px] lg:text-[35px] md:text-[35px] mb-10">Drinks</h1>
 
     <div
       className="
@@ -146,7 +146,8 @@ const products = [
         md:grid-cols-3
         lg:grid-cols-4
         gap-x-2
-        lg:gap-y-6
+        lg:gap-x-14
+        lg:gap-y-4
       "
     >
       {products.map((item) => (
