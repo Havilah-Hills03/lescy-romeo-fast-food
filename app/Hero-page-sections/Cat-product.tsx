@@ -60,27 +60,22 @@ const catProducts = [
 const CatProduct: React.FC = () => {
   return (
  <section 
+ className="cat-pro-sec"
   style={{
         background: 'linear-gradient(0deg, #7D1114 9.03%, #E31E24 92.86%)',
-        width: "100%",
-         paddingLeft: '6.1em' ,
-         paddingTop: ''
+        width: "100%", 
       }} 
      
  >
-  <h1 className="h1 text-center pt-8 lg:pt-12" 
+  <h1 className="h1 text-center pt-8 font-medium text-[20px] lg:text-[35px] md:text-[35px]" 
   >Categories</h1>
      <div 
-      className=" max-w-4xl  lg:max-w-7xl flex justify-center items-center"
-      style={
-        {
-             minHeight: "40vh",
-        }
-      }
+      className=" max-w-4xl  lg:max-w-7xl flex justify-center items-center lg:h-[40vh] h-[30vh]"
+      
     >
       
       <Swiper 
-        slidesPerView={4.24}
+        slidesPerView={2.54}
         navigation={true}
         loop={true} 
         onSlideChange={() => console.log("text move")}

@@ -87,7 +87,7 @@ const TopProduct: React.FC = () => {
         breakpoints={{
           480: { slidesPerView: 2.2, spaceBetween: 10 },
           768: { slidesPerView: 3.2, spaceBetween: 10 },
-          1024: { slidesPerView: 4.1, spaceBetween: 10 },
+          1024: { slidesPerView: 4.1, spaceBetween: 20 },
         }}
       >
         

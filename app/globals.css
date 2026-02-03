@@ -45,6 +45,12 @@ nav li {
      padding-left: 5.5em;
      padding-top: '2em'
   }
+  .cat-pro-sec{
+     padding-left: 6.1em
+  }
+  .drink-cat img{
+    width: 300px;
+  }
 }
 
 
@@ -63,5 +69,8 @@ nav li {
     height: 35px!important;
     padding: 10px 2px!important;
     margin-bottom: 10px!important;
+  }
+   .cat-pro-sec{
+     padding-left: 3.1em
   }
 }

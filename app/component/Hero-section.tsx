@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroProps> = ({
 }) => {
   return (
     <section
-      className="flex  shrink-0 flex-row px-6   sm:px-12 lg:px-24 justify-between  items-center  mx-auto lg:h-full md:h-full h-[195px]  hero-com"
+      className="flex  shrink-0 flex-row px-6   sm:px-12 lg:px-24 justify-between  items-center  mx-auto lg:h-[60vh] md:h-full h-[195px]  hero-com"
       style={{
         background: 'linear-gradient(93.23deg, #E31E24 0.65%, #7D1114 67.91%)'
       }}

@@ -110,7 +110,7 @@ const MostPopular: React.FC = () => {
       grid
       grid-cols-2
       lg:grid-cols-4 
-      lg:gap-x-8
+      lg:gap-x-12
       lg:gap-y-6
       gap-x-2
       gap-y-1

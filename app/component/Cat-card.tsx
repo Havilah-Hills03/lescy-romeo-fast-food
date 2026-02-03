@@ -12,7 +12,7 @@ catLink: string
 
 const CatCard: React.FC <catProps> = ({catCardImg , catAltImg, catCardTitle, catLink}) => {
   return (
-  <div className='text-center flex flex-col justify-center items-center'>
+  <div className='text-center w-[102px] lg:w-auto flex flex-col justify-center items-center'>
      <Link href={catLink}>
       <div 
   
@@ -25,7 +25,7 @@ const CatCard: React.FC <catProps> = ({catCardImg , catAltImg, catCardTitle, cat
     }}
     /> 
     </div>
-    <p className='text-[#F9F9F9] text-[17px] font-medium text-center pl-1'>{catCardTitle}</p>
+    <p className='text-[#F9F9F9] lg:text-[16px] md:text-[16px] text-[12px] font-medium text-center pl-1'>{catCardTitle}</p>
      </Link>
   </div>
   )
