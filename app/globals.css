@@ -49,7 +49,7 @@ nav li {
      padding-left: 6.1em
   }
   .drink-cat img{
-    width: 300px;
+    width: 100%!important; 
   }
 }
 
