@@ -9,7 +9,7 @@ const DrinkCat = () => {
       style={{
       background: 'linear-gradient(167.02deg, #E31E24 12.38%, #B0171C 18%, #7D1114 100%)'
     }}
-    className='drink-cat'
+    className='drink-cat overflow-x-hidden overflow-y-hidden'
     >
       <HeroSection 
       heroBold="Hot, Fresh meals"

@@ -70,10 +70,10 @@ const TopProduct: React.FC = () => {
       }} 
      
  >
-  <h1 className="h1 text-center pt-8 font-medium text-[20px] lg:text-[35px] md:text-[35px]" 
+  <h1 className="h1 text-center pt-12 font-medium text-[20px] lg:text-[35px] md:text-[35px]" 
   >Top Products</h1>
      <div 
-      className=" max-w-4xl lg:max-w-7xl  md:max-w-7xl  flex justify-center items-center h-[50vh] lg:h-screen px-1"
+      className=" max-w-4xl lg:max-w-8xl  md:max-w-7xl  flex justify-center items-center h-[50vh] lg:h-screen px-1"
       
     >
       
@@ -87,7 +87,7 @@ const TopProduct: React.FC = () => {
         breakpoints={{
           480: { slidesPerView: 2.2, spaceBetween: 10 },
           768: { slidesPerView: 3.2, spaceBetween: 10 },
-          1024: { slidesPerView: 4.1, spaceBetween: 20 },
+          1200: { slidesPerView: 4.1, spaceBetween: 16 },
         }}
       >
         
