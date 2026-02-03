@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
   };
   return (
     <footer
-      className="text-[#f5f5f5]  lg:px-[80px] py-12 bg-[#F9F9F9]"
+      className="text-[#f5f5f5]  lg:px-[80px] py-12 bg-[#F9F9F9] px-6"
       style={{
  
 

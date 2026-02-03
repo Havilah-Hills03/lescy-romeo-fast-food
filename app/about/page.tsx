@@ -11,8 +11,9 @@ const AboutPage:React.FC = () => {
       background: 'linear-gradient(167.02deg, #E31E24 12.38%, #B0171C 18%, #7D1114 100%)'
     }}
      >
-         <HeroSection
-      heroTitle="Freshly Prepared Today. At Your Door in Minutes." 
+         <HeroSection  
+      heroBold='Freshly Prepared Today.'
+      heroLight='At Your Door in Minutes.'
       heroDesc='We don’t believe in "sitting on a shelf." Our kitchen fires up every morning to prep fresh ingredients from scratch, ensuring every meal is handled with care and delivered at peak flavor.'
       btnClassName="shadow-0"
       heroImg="/aboutImg.png"

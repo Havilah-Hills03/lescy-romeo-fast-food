@@ -101,24 +101,34 @@ const MostPopular: React.FC = () => {
   }
 ];
   return (
-    <section className='h-auto py-6 px-10  lg:px-18 lg:py-20 '>
-     <h1 className="h1 text-center mb-19">Most Popular</h1>
+    <section className='h-auto py-6 md:px-10  lg:px-6 lg:py-20 flex justify-center items-center flex-col'>
+     <h1 className="h1 text-center pt-8 font-medium text-[20px] lg:text-[35px] md:text-[35px] mb-6">Most Popular</h1>
 
-    <div className='grid lg:grid-cols-4 grid-cols-2 my-10 lg:gap-x-14 gap-x-6 gap-y-10'>
-        {
-            products.map((item) => (
-                <ProductCard 
-                key={item.id}
-              productImage={item.productImage}
-              productAlt={item.productAlt}
-              productTitle={item.productTitle}
-              productPrice={item.productPrice}
-              productDesc={item.productDesc}
-               btn="border border-[#E31E24] text-[#E31E24] font-[500] "
-                />
-            ))
-        }
-    </div>
+  <div className="max-w-[1280px] mx-auto  sm:px-6 lg:px-6 flex justify-center items-center">
+  <div
+    className="
+      grid
+      grid-cols-2
+      lg:grid-cols-4 
+      lg:gap-x-8
+      lg:gap-y-6
+      gap-x-2
+      gap-y-1
+    "
+  >
+    {products.map((item) => (
+      <ProductCard
+        key={item.id}
+        productImage={item.productImage}
+        productAlt={item.productAlt}
+        productTitle={item.productTitle}
+        productPrice={item.productPrice}
+        productDesc={item.productDesc}
+        btn="border border-[#E31E24] text-[#E31E24] font-[500]"
+      />
+    ))}
+  </div>
+</div>
 
     </section>
   )

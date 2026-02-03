@@ -63,27 +63,22 @@ const products = [
 const TopProduct: React.FC = () => {
   return (
  <section 
+ className="topProduct"
   style={{
         
-        width: "100%",
-         paddingLeft: '5.5em' ,
-         paddingTop: '2em'
+        width: "100%", 
       }} 
      
  >
-  <h1 className="h1 text-center pt-8" 
+  <h1 className="h1 text-center pt-8 font-medium text-[20px] lg:text-[35px] md:text-[35px]" 
   >Top Products</h1>
      <div 
-      className=" max-w-4xl lg:max-w-7xl flex justify-center items-center"
-      style={
-        {
-             minHeight: "100vh",
-        }
-      }
+      className=" max-w-4xl lg:max-w-7xl  md:max-w-7xl  flex justify-center items-center h-[50vh] lg:h-screen px-1"
+      
     >
       
       <Swiper 
-        slidesPerView={4.24}
+        slidesPerView={2}
         navigation={true}
         loop={true} 
         onSlideChange={() => console.log("text move")}
@@ -91,8 +86,8 @@ const TopProduct: React.FC = () => {
         autoplay={{ delay: 500, disableOnInteraction: false }}
         breakpoints={{
           480: { slidesPerView: 2.2, spaceBetween: 10 },
-          768: { slidesPerView: 2.2, spaceBetween: 10 },
-          1024: { slidesPerView: 4.6, spaceBetween: 170 },
+          768: { slidesPerView: 3.2, spaceBetween: 10 },
+          1024: { slidesPerView: 4.1, spaceBetween: 10 },
         }}
       >
         
@@ -104,7 +99,7 @@ const TopProduct: React.FC = () => {
               productTitle={item.productTitle}
               productPrice={item.productPrice}
               // productDesc={item.productDesc}
-              btn="border-2 border-[#E31E24] text-[#E31E24] font-[500] px-12 "
+              btn="border-2 border-[#E31E24] text-[#E31E24] font-[500] lg:px-12 "
             />
           </SwiperSlide>
         ))}

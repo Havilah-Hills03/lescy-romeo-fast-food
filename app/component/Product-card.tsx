@@ -13,7 +13,7 @@ btn?: string
 
 const ProductCard:React.FC<productProps>  = ({productImage , productAlt, productTitle, productPrice, productDesc, btn}) => {
   return (
-<div className="lg:w-75 lg:h-[466px] my-4 w-42 mx-auto rounded-[50px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden">
+<div className="lg:w-75  md:w-75  lg:h-[466px] md:h-[466px] h-[270px] pb-4 my-4 w-46 mx-auto lg:rounded-[50px]  md:rounded-[50px]  rounded-[25px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden prodcat-com">
   
   {/* image content */}
   <div className="h-[45%] w-full flex justify-center items-center">
@@ -29,22 +29,24 @@ const ProductCard:React.FC<productProps>  = ({productImage , productAlt, product
   {/* text content */}
 <div className="p-4 bg-[#F9F9F9] flex flex-col  gap-2 mt-auto">
   <div>
-    <p className="text-[#121212] text-xl font-normal line-clamp-1 mb-1">
+    <p className="text-[#121212] lg:text-xl md:text-xl text-[14px] font-normal line-clamp-1 mb-1">
       {productTitle}
     </p>
 
     {productDesc && (
-      <p className="text-[#121212B2] font-light text-[16px] line-clamp-2 mb-2">
+      <p className="text-[#121212B2] font-light lg:text-[16px] text-[10px] line-clamp-2 lg:mb-2 md:mb-2 mb-1">
         {productDesc}
       </p>
     )}
   </div>
 
   <div className="mt-auto">
-    <h5 className="text-[#121212] text-xl font-semibold mb-4">
+    <h5 className="text-[#121212] lg:text-xl md:text-xl text-[15px] font-semibold lg:mb-4 md:mb-4 mb-2"> 
       {productPrice}
     </h5> 
-    <Button children="Order Now" className={btn} />
+   <div className='mt-auto'>
+     <Button children="Order Now" className={btn} />
+   </div>
   </div>
 </div>
 </div>

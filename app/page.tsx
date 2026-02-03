@@ -13,10 +13,11 @@ export default function Home() {
     >
 
       {/* hero page  */}
-     <HeroSection
-      heroTitle="Hot, Fresh meals Delivered in 20 minutes"
+     <HeroSection 
+      heroBold="Hot, Fresh meals"
+      heroLight="Delivered in 20 minutes"
       btnTitle="Order Now"
-      btnClassName="bg-[#f9f9f9] lg:w-[287px] text-[#E31E24]"
+      btnClassName="bg-[#f9f9f9] lg:w-[287px] md:w-[287px] text-[#E31E24]"
       heroImg="/home-hero-banner.png"
       heroWidth={386}
       heroHeight={399}

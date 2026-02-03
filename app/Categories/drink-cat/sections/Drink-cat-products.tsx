@@ -134,26 +134,35 @@ const products = [
   }
 ];
   return (
-    <section className='h-auto py-6 px-10  lg:px-18 lg:py-20 '>
-     <h1 className="h1 text-center mb-19">Drinks</h1>
+   <section className="py-6 lg:py-20">
+  {/* Container */}
+  <div className="max-w-[1280px] mx-auto md:px-4 px-2 sm:px-6 lg:px-10">
+    <h1 className="h1 text-center lg:mb-12 md:mb-12 mb-6">Drinks</h1>
 
-    <div className='grid lg:grid-cols-4 grid-cols-2 my-10 lg:gap-x-14 gap-x-6 gap-y-10'>
-        {
-            products.map((item) => (
-                <ProductCard
-                key={item.id}
-              productImage={item.productImage}
-              productAlt={item.productAlt}
-              productTitle={item.productTitle}
-              productPrice={item.productPrice}
-              productDesc={item.productDesc}
-               btn="border border-[#E31E24] text-[#E31E24] font-[500] "
-                />
-            ))
-        }
+    <div
+      className="
+        grid
+        grid-cols-2
+        md:grid-cols-3
+        lg:grid-cols-4
+        gap-x-2
+        lg:gap-y-6
+      "
+    >
+      {products.map((item) => (
+        <ProductCard
+          key={item.id}
+          productImage={item.productImage}
+          productAlt={item.productAlt}
+          productTitle={item.productTitle}
+          productPrice={item.productPrice}
+          productDesc={item.productDesc}
+          btn="border border-[#E31E24] text-[#E31E24] font-[500]"
+        />
+      ))}
     </div>
-
-    </section>
+  </div>
+</section>
   )
 }
 

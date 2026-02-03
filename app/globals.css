@@ -21,9 +21,7 @@ nav li {
 }
 
 .h1{
-  color: #F9F9F9;
-  font-weight: 600;
-font-size: 35px;
+  color: #F9F9F9; 
   line-height: 0%;
   text-align: center;
 }
@@ -42,6 +40,13 @@ font-size: 35px;
   display: none
 }
 
+@media(min-width: 992px) {
+  .topProduct{
+     padding-left: 5.5em;
+     padding-top: '2em'
+  }
+}
+
 
 @media (max-width: 578px) {
   button{
@@ -52,5 +57,11 @@ font-size: 35px;
   .hero-com img {
     width: 160!important;
     height: 165px!important ;
+  }
+  .prodcat-com button{
+    width: 100%!important;
+    height: 35px!important;
+    padding: 10px 2px!important;
+    margin-bottom: 10px!important;
   }
 }

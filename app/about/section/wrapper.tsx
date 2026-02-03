@@ -19,7 +19,7 @@ const Wrapper:React.FC = () => {
     }
 ]
   return (
-    <section className='py-10 grid lg:grid-cols-3 mb-10'>
+    <section className='py-12 grid lg:grid-cols-3 mb-10 px-10 lg:px-24'>
       {
      wrappperData.map((item) => (
           <div key={item.id} className='flex justify-center items-center flex-col'> 

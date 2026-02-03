@@ -16,7 +16,7 @@ const CatCard: React.FC <catProps> = ({catCardImg , catAltImg, catCardTitle, cat
      <Link href={catLink}>
       <div 
   
-    className=''
+    className='mb-2'
     > 
     <img src={catCardImg} alt={catAltImg} width={160} height={158} className='object-cover  border-2  border-[#F9F9F9]  rounded-[40px] hover:border-4 '
       style={{
