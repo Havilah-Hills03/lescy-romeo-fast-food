@@ -80,16 +80,21 @@ nav li {
       border-radius: 11px!important;
   }
   .prodcat-com img{
-    width: 100px!important
+    width: 120px!important
   }
    .cat-pro-sec{
      padding-left: 3.1em
+  }
+   .prodcat-com {
+   padding-left: 6px;
+   padding-right: 6px;
   }
 }
 
 @media (max-width:350px) {
   .prodcat-com {
     width: 150px;
+    padding:1px
   }
 }
 
