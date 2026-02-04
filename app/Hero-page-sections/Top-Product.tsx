@@ -85,7 +85,7 @@ const TopProduct: React.FC = () => {
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{ delay: 500, disableOnInteraction: false }}
         breakpoints={{
-          480: { slidesPerView: 2.2, spaceBetween: 10 },
+          480: { slidesPerView: 2.2, spaceBetween: 2 },
           768: { slidesPerView: 3.2, spaceBetween: 10 },
           1200: { slidesPerView: 4.1, spaceBetween: 16 },
         }}
