@@ -15,7 +15,7 @@ const DrinkCat = () => {
       heroBold="Hot, Fresh meals"
       heroLight="Delivered in 20 minutes"
       btnTitle="Order Now"
-      btnClassName="bg-[#f9f9f9] lg:w-[287px] text-[#E31E24]"
+      btnClassName="border-2 border-[#f9f9f9] lg:w-[287px] text-[#fff] hover:scale-[1.1]"
       heroImg="/packs-of-drink.png"
       heroWidth={386}
       heroHeight={399}

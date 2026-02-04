@@ -13,18 +13,18 @@ btn?: string
 
 const ProductCard:React.FC<productProps>  = ({productImage , productAlt, productTitle, productPrice, productDesc, btn}) => {
   return (
-<div className="lg:w-75  md:w-75  lg:h-[466px] md:h-[466px] h-[270px] pb-4 my-4 w-46 mx-auto lg:rounded-[50px]  md:rounded-[50px]  rounded-[25px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden prodcat-com">
+<div className="lg:w-75  md:w-75    lg:h-[466px] md:h-[466px] h-[300px]   my-4 w-[170px] mx-auto lg:rounded-[50px]  md:rounded-[50px]  rounded-[25px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden prodcat-com">
   
   {/* image content */}
-  <div className="h-[45%] w-full flex justify-center items-center">
-    <Image
-      src={productImage}
-      alt={productAlt}
-      width={216}
-      height={183}
-      className="max-h-full max-w-full object-contain"
-    />
-  </div>
+ <div className="h-[46%] w-full flex items-center justify-center pt-4">
+        <Image
+          src={productImage}
+          alt={productAlt}
+          width={200}
+          height={183}
+          className="max-h-full max-w-full object-contain"
+        />
+      </div>
 
   {/* text content */}
 <div className="p-4 bg-[#F9F9F9] flex flex-col  gap-2 mt-auto">

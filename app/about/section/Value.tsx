@@ -51,7 +51,7 @@ const Value:React.FC = () => {
              <h2 className='text-lg font-normal text-[#121212] text-center py-2 mb-6'> 
             We value your time as much as your tastebuds. if it’s not fresh enough, fast enough, or good <br /> enough, it’s not Lescy Romeo
         </h2>
-        <a href="" className='bg-[#f9f9f9]    px-10 lg:px-20 py-4 rounded-[15px] text-[#E31E24] border-[2.24px] border-[#E31E24]'>Order Now</a>
+        <a href="" className='bg-[#f9f9f9]    px-10 lg:px-20 py-4 rounded-[15px] text-[#E31E24] border-[2.24px] border-[#E31E24] hover:scale-[1.1]'>Order Now</a>
          </div>
     </section>
   )

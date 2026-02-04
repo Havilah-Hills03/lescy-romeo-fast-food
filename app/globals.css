@@ -31,10 +31,12 @@ nav li {
   color: white!important; 
  
 }
+
 .pro-card:hover {
     transform: translateY(-10); 
     transition: all 0.25s ease   ;
 }
+ 
 
 .about button{
   display: none
@@ -51,6 +53,11 @@ nav li {
   .drink-cat img{
     width: 100%!important; 
   }
+    button{
+    width: 200px;
+    height: 38px;
+    font-size:10px ;
+  }
 }
 
 
@@ -59,6 +66,7 @@ nav li {
     width: 86px;
     height: 26px;
     font-size:10px ;
+  
   }
   .hero-com img {
     width: 160!important;
@@ -69,6 +77,10 @@ nav li {
     height: 35px!important;
     padding: 10px 2px!important;
     margin-bottom: 10px!important;
+      border-radius: 11px!important;
+  }
+  .prodcat-com img{
+    width: 100px!important
   }
    .cat-pro-sec{
      padding-left: 3.1em
