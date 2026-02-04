@@ -85,16 +85,17 @@ nav li {
    .cat-pro-sec{
      padding-left: 3.1em
   }
-   .prodcat-com {
-   padding-left: 6px;
-   padding-right: 6px;
+   .topProduct {
+   padding-left: 24px;
+   padding-right: 24px;
   }
 }
 
 @media (max-width:350px) {
   .prodcat-com {
     width: 150px;
-    padding:1px
+    padding-left: 2px;
+   padding-right: 2px;
   }
 }
 
