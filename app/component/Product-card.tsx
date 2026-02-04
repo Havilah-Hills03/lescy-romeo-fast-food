@@ -13,10 +13,10 @@ btn?: string
 
 const ProductCard:React.FC<productProps>  = ({productImage , productAlt, productTitle, productPrice, productDesc, btn}) => {
   return (
-<div className="lg:w-75  md:w-75 lg:h-[466px] md:h-[466px] h-[278px]   my-4 w-[150px] mx-auto lg:rounded-[50px]  md:rounded-[50px]  rounded-[25px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden prodcat-com">
+<div className="lg:w-75  md:w-75    lg:h-[466px] md:h-[466px] h-[300px]   my-4 w-[170px] mx-auto lg:rounded-[50px]  md:rounded-[50px]  rounded-[25px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden prodcat-com">
   
   {/* image content */}
- <div className="h-[46%] w-full flex items-center justify-center pt-4">
+ <div className="h-[45%] w-full flex items-center justify-center pt-4">
         <Image
           src={productImage}
           alt={productAlt}

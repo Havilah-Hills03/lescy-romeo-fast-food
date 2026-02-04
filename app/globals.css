@@ -86,3 +86,14 @@ nav li {
      padding-left: 3.1em
   }
 }
+
+@media (max-width:350px) {
+  .prodcat-com {
+    width: 150px;
+  }
+}
+
+
+
+
+
