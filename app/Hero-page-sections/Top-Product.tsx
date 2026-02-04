@@ -63,7 +63,7 @@ const products = [
 const TopProduct: React.FC = () => {
   return (
  <section 
- className="topProduct"
+ className="topProduct px-3"
   style={{
         
         width: "100%", 
@@ -71,7 +71,7 @@ const TopProduct: React.FC = () => {
      
  >
   <h1 className="h1 text-center pt-12 font-medium text-[20px] lg:text-[35px] md:text-[35px]" 
-  >Top Products....</h1>
+  >Top Products</h1>
      <div 
       className=" max-w-4xl lg:max-w-8xl  md:max-w-7xl  flex justify-center items-center h-[48vh] lg:h-screen px-1"
       
