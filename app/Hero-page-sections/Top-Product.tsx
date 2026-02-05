@@ -71,7 +71,7 @@ const TopProduct: React.FC = () => {
      
  >
   <h1 className="h1 text-center pt-12 font-medium text-[20px] lg:text-[35px] md:text-[35px]" 
-  >Top Products</h1>
+  >Top Products....</h1>
      <div 
       className=" max-w-4xl lg:max-w-8xl  md:max-w-7xl  flex justify-center items-center my-10 px-1"
       
@@ -89,8 +89,8 @@ const TopProduct: React.FC = () => {
           // 768: { slidesPerView: 3.2, spaceBetween: 10 }, 
           // 1200: { slidesPerView: 4.1, spaceBetween: 16 },
            0: {
-      slidesPerView: 1.3,
-      spaceBetween: 12,
+      slidesPerView: 2,
+      spaceBetween: 7,
     },
     480: {
       slidesPerView: 2.1,
