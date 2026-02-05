@@ -5,7 +5,7 @@ const Wrapper:React.FC = () => {
         {
         id: 1,
         wrapperIcon: '/kitchen-icon.svg',
-        wrapperText: 'Everything you eat was prepared in our kitchen this money'
+        wrapperText: 'Everything you eat was prepared in our kitchen this morning'
     },
      {
         id: 2,
@@ -16,10 +16,15 @@ const Wrapper:React.FC = () => {
         id: 3,
         wrapperIcon: '/driver-icon.svg',
         wrapperText: 'Our drivers are on the move the moment your meal is ready '
+    },
+       
+    { id: 4,
+        wrapperIcon: '/driver-icon.svg',
+        wrapperText: 'Our drivers are on the move the moment your meal is ready '
     }
 ]
   return (
-    <section className='py-12 grid lg:grid-cols-3 mb-10 px-10 lg:px-26'>
+    <section className='py-12 grid lg:grid-cols-4 mb-10 px-10 lg:px-26'>
       {
      wrappperData.map((item) => (
           <div key={item.id} className='flex justify-center items-center flex-col hover:scale-[1.1]'> 

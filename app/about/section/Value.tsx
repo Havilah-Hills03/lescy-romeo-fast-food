@@ -6,7 +6,7 @@ const Value:React.FC = () => {
         {id:1,
             valueImg: '/quality.png',   
             valueTitle: 'Quality Without Shortcuts',
-            valueDesc: ' We believe "fast" shouldnt mean cheap. While others look for ways to cut costs, we look for ways to elevate the experience. From premium oils to hand-picked produce, we choose the best path, not the easiest one.  '
+            valueDesc: ' We believe "fast" should not mean cheap. While others look for ways to cut costs, we look for ways to elevate the experience. From premium oils to hand-picked produce, we choose the best path, not the easiest one.  '
         },
          {id:2,
             valueImg: '/radial-freshness.png',   
@@ -16,15 +16,14 @@ const Value:React.FC = () => {
          {id:3,
             valueImg: '/people-frist-service.png',   
             valueTitle: 'People-First Service',
-            valueDesc: ' Behind every app notification is a team of real people. We take care of our kitchen staff and our drivers, because we know that happy hands make better food. When you support us, you’re supporting a community that cares. '
+            valueDesc: ' Behind every order is a team of real people. We take care of our kitchen staff and our drivers, because we know that happy hands make better food. When you support us, you’re supporting a community that cares. '
         }
     ]
   return (
     <section className='pt-12'>
         <h2 className='text-4xl text-[#F9F9F9]  font-semibold text-center'>Our Values</h2>
         <p className='text-lg font-normal text-[#F9F9F9] text-center py-2'>
-            We don’t just follow recipes; we follow a set of principles that ensure every meal is worthy of your table.Order
-              
+            We don’t just follow recipes; we follow a set of principles that ensure every meal is worthy of your table. 
         </p>
        
         <div className='px-10 lg:px-[6em] py-10'>

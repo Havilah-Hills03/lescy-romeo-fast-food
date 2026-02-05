@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
         { id: 1, name: "Main Dishes", link: "/categories/main-dishes" },
         { id: 2, name: "Proteins", link: "/categories/proteins" },
         { id: 3, name: "Drinks", link: "/categories/drink-cat" },
+         { id: 4, name: "Swallows", link: "/categories/swallows" },
       ],
     },
     {

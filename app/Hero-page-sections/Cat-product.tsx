@@ -24,7 +24,7 @@ const catProducts = [
     id: 3,
     catImage: "/sharwama.png",
     catAlt: "Snacks",
-    catTitle: "Snacks",
+    catTitle: "Snacks & Others",
      url: '/snacks' 
   },
   {
