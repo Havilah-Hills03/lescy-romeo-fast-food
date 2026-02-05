@@ -42,6 +42,11 @@ nav li {
   display: none
 }
 
+.cat-card-com img{
+  width: 150px!important;
+  height: 150px!important;
+}
+
 @media(min-width: 992px) {
   .topProduct{
      padding-left: 5.5em;

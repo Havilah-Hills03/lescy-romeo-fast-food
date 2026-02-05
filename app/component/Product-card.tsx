@@ -27,7 +27,7 @@ const ProductCard:React.FC<productProps>  = ({productImage , productAlt, product
       </div>
 
   {/* text content */}
-<div className="p-4 bg-[#F9F9F9] flex flex-col  gap-2 mt-auto">
+<div className=" bg-[#F9F9F9] flex flex-col  gap-2 mt-auto">
   <div>
     <p className="text-[#121212] lg:text-xl md:text-xl text-[14px] font-normal line-clamp-1 mb-1">
       {productTitle}

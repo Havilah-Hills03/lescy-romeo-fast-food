@@ -1,30 +1,30 @@
+import CatCard from '@/app/component/Cat-card'
 import HeroSection from '@/app/component/Hero-section'
 import CatProduct from '@/app/Hero-page-sections/Cat-product'
 import React from 'react'
-import DrinkCatProducts from './sections/Drink-cat-products'
+import MainDishes from './section/Main-dishes-cat'
 
-const DrinkCat = () => {
-  return (
-    <div 
+const page = () => {
+  return (  <div 
       style={{
       background: 'linear-gradient(167.02deg, #E31E24 12.38%, #B0171C 18%, #7D1114 100%)'
     }}
-    className='drink-cat overflow-x-hidden overflow-y-hidden'
+    className='  overflow-x-hidden overflow-y-hidden'
     >
-      <HeroSection 
-      heroBold="Hot, Fresh meals"
-      heroLight="Delivered in 20 minutes"
+         <HeroSection 
+     heroBold="Main Dishes"
+heroLight="Hot, delicious meals delivered fast"
       btnTitle="Order Now"
       btnClassName="border-2 border-[#f9f9f9] lg:w-[287px] text-[#fff] hover:scale-[1.1]"
-      heroImg="/packs-of-drink.png"
+      heroImg="/home-hero-banner.png"
       heroWidth={386}
       heroHeight={399}
       heroAlt="food Image"
       />
-      <DrinkCatProducts />
+      <MainDishes />
       <CatProduct />
     </div>
   )
 }
 
-export default DrinkCat
+export default page

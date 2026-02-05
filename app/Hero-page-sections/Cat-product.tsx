@@ -11,14 +11,14 @@ const catProducts = [
     catImage: "/main-dishes.png",
     catAlt: "Main Dishes",
     catTitle: "Main Dishes",
-    url: '/main-dishes' 
+    url: '/categories/main-dishes' 
   },
   {
     id: 2,
     catImage: "/proteins.png",
     catAlt: "Proteins",
     catTitle: "Proteins" ,
-     url: '/protein' 
+     url: '/categories/proteins' 
   },
   {
     id: 3,
@@ -50,6 +50,13 @@ const catProducts = [
   },
   {
     id: 7,
+    catImage: "/drink-pack.jpg",
+    catAlt: "Drink",
+    catTitle: "Drink",
+     url: '/categories/drink-cat' 
+  },
+    {
+    id: 8,
     catImage: "/sharwama.png",
     catAlt: "Others",
     catTitle: "Others",

@@ -18,8 +18,9 @@ const Navbar: React.FC = () => {
       id: 2,
       navName: "Categories",
       children: [
-        { id: 1, name: "Burgers", link: "/categories/burgers" },
-        { id: 2, name: "Drinks", link: "/Categories/drink-cat" },
+        { id: 1, name: "Main Dishes", link: "/categories/main-dishes" },
+        { id: 2, name: "Proteins", link: "/categories/proteins" },
+        { id: 3, name: "Drinks", link: "/categories/drink-cat" },
       ],
     },
     {
@@ -31,7 +32,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="bg-[#F9F9F9]  lg:h-18.25 lg:px-10   sticky top-0 z-50 hidden">
+    <nav className="bg-[#F9F9F9]  lg:h-18.25 lg:px-10   sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
