@@ -1,25 +1,33 @@
+'use client'
+
 import ProductCard from "@/app/component/Product-card";
-import React from "react";
+import ProductModal from "@/app/component/ProductModal";
+import React, { useState } from "react";
 
 const Swallow: React.FC = () => {
-  const swallows = [
-    {
-      id: 1,
-      productImage: "/semo.png",
-      productAlt: "Semovita",
-      productTitle: "Semovita",
-      productPrice: "₦1,500",
-      productDesc: "Soft, smooth semovita perfect for all Nigerian soups",
-    },
-    {
-  id: 2,
-  productImage: "/swallow.png",
-  productAlt: "Eba",
-  productTitle: "Eba",
-  productPrice: "₦2,000",
-  productDesc: "Hot, smooth eba made from garri, perfect with Nigerian soups",
-},
-  ];
+   const [selectedProduct, setSelectedProduct] = useState<any>(null);
+
+const swallows = [
+  {
+    id: 1,
+    productImage: "/semo.png",
+    productAlt: "Semovita",
+    productTitle: "Semovita",
+    productPrice: "₦1,500",
+    productDesc:
+      "Soft and silky semovita made from premium wheat flour. Perfectly smooth and stretchy, it pairs beautifully with Nigerian soups like Egusi, Afang, or Okro for a comforting, hearty meal.",
+  },
+  {
+    id: 2,
+    productImage: "/swallow.png",
+    productAlt: "Eba",
+    productTitle: "Eba",
+    productPrice: "₦2,000",
+    productDesc:
+      "Freshly prepared, hot, and smooth eba made from fine-grained garri. Soft yet firm enough to scoop soups with ease, making it the ultimate companion for any Nigerian stew or soup.",
+  },
+];
+
 
   return (
     <section className="py-6 lg:py-20">
@@ -38,9 +46,24 @@ const Swallow: React.FC = () => {
               productPrice={item.productPrice}
               productDesc={item.productDesc}
               btn="border border-[#E31E24] text-[#E31E24] font-[500]"
+               onClick={() => setSelectedProduct(item)}
             />
           ))}
         </div>
+
+         {selectedProduct && (
+            <ProductModal
+              show={true}
+              handleClose={() => setSelectedProduct(null)}
+              title={selectedProduct.productTitle}
+              price={selectedProduct.productPrice} 
+              image={selectedProduct.productImage}
+              desc={selectedProduct.productDesc}
+              link={`/products/${selectedProduct.id}`}
+              
+              
+            />
+          )}
       </div>
     </section>
   );

@@ -8,15 +8,16 @@ productAlt: string,
 productTitle: string,
 productPrice: string,
 productDesc?: string,
-btn?: string
+btn?: string,
+onClick? : () => void
 }
 
-const ProductCard:React.FC<productProps>  = ({productImage , productAlt, productTitle, productPrice, productDesc, btn}) => {
+const ProductCard:React.FC<productProps>  = ({productImage , productAlt, productTitle, productPrice, productDesc, btn, onClick}) => {
   return (
 <div className="lg:w-[283px]  md:w-[280px]   lg:h-[466px] md:h-[466px] h-[300px]   my-4 w-[180px] mx-auto lg:rounded-[50px]  md:rounded-[50px]  rounded-[25px] border-[1.5px] border-[#B2B2B280] bg-white flex flex-col pro-card cursor-pointer overflow-hidden prodcat-com  w-full max-w-[320px] mx-auto bg-white rounded-xl p-4">
   
   {/* image content */}
- <div className="h-[45%] w-full flex items-center justify-center pt-4 card-img">
+ <div className="h-[45%] w-full flex items-center justify-center pt-4 card-img" onClick={onClick}>
         <Image
           src={productImage}
           alt={productAlt}
