@@ -25,7 +25,7 @@ const catProducts = [
     catImage: "/sharwama.png",
     catAlt: "Snacks",
     catTitle: "Snacks & Others",
-     url: '/snacks' 
+     url: '/categories/snacks-cat' 
   },
   {
     id: 4,

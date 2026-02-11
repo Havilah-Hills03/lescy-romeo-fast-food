@@ -84,9 +84,9 @@ const ProductModal: React.FC<ProductModalProps> = ({
             </p>
 
             <button
-              onClick={() => window.open(link, "_blank")}
+              onClick={() => window.open("http://localhost/opencart/index.php?route=product/product&language=en-gb&product_id=40", "_blank")}
               className="mt-auto border border-[#E31E24] text-[#E31E24] font-semibold py-3 rounded-xl
-              hover:bg-[#c91a1f] transition text-lg cursor-pointer"
+              hover:bg-[#c91a1f] hover-text-white transition text-lg cursor-pointer"
             >
               Proceed to Order
             </button>
